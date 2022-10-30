@@ -4,6 +4,7 @@ using Marcu_Adrian_LAB2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Marcu_Adrian_LAB2.Migrations
 {
     [DbContext(typeof(Marcu_Adrian_LAB2Context))]
-    partial class Marcu_Adrian_LAB2ContextModelSnapshot : ModelSnapshot
+    [Migration("20221030153217_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

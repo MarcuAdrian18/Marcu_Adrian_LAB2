@@ -19,5 +19,8 @@ namespace Marcu_Adrian_LAB2.Data
         public DbSet<Marcu_Adrian_LAB2.Models.Publisher> Publisher { get; set; }
 
         public DbSet<Marcu_Adrian_LAB2.Models.Author> Author { get; set; }
+
+        public DbSet<Marcu_Adrian_LAB2.Models.BookCategory> BookCategory { get; set; }
+        public object Category { get; internal set; }
     }
 }
