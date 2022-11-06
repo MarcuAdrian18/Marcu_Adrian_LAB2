@@ -13,6 +13,15 @@ namespace Marcu_Adrian_LAB2.Models
         
         public decimal LastName { get; set; }
 
-       
+        [Display(Name = "Full Name")]
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
+
+
     }
 }
